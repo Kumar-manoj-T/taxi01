@@ -9,20 +9,20 @@ app.set("views", __dirname + "/views");
 app.set("view engine", "ejs");
 
 // AtoB Routes (SEO)
-const atobRouter = require("./routes/atob.routes")
-app.use("/one-way-taxi", atobRouter)
+const atobRouter = require("./routes/atob.routes");
+app.use("/one-way-taxi", atobRouter);
 
 app.get("/", (req, res) => {
   res.render("index");
 });
 
 const bookingRouter = require("./routes/booking.routes");
-app.use("/api",bookingRouter)
+app.use("/api", bookingRouter);
 
 const estimateRouter = require("./routes/estimate.routes");
-app.use("/estimation",estimateRouter)
+app.use("/estimation", estimateRouter);
 
-const otpRouter = require("./routes/otp.routes")
+const otpRouter = require("./routes/otp.routes");
 app.use("/otp", otpRouter);
 
 const pages = [
@@ -58,9 +58,8 @@ app.get("/success", (req, res) => {
   res.render("success");
 });
 
-
 app.use("", (req, res) => {
   res.render("404");
 });
 
-module.exports = app
+module.exports = app;
