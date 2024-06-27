@@ -64,29 +64,91 @@
        
        
         <!-- Coming Soon Area Start -->
-        <section class="coming-soon-area py-100 bgs-cover" style="background-image: url(assets/images/backgrounds/coming-soon.jpg);">
-            <div class="container">
-                <div class="row pt-10 rpt-65 gap-100 align-items-center">
-                    <div class="col-lg-6">
-                       <div class="coming-soon-content rmb-55">
-                            <h1 data-aos="fade-up" data-aos-duration="1500" data-aos-offset="50">We Are Coming Very Soon</h1>
-                            <p data-aos="fade-up" data-aos-delay="50" data-aos-duration="1500" data-aos-offset="50">It looks like you've ventured into uncharted territory. The page you were looking for may have been moved, deleted, or never existed</p>
-                            <ul class="coming-soon-wrap mt-50" data-aos="fade-up" data-aos-delay="150" data-aos-duration="1500" data-aos-offset="50">
-                                <li><span id="days"></span>Days</li>
-                                <li><span id="hours"></span>Hours</li>
-                                <li><span id="minutes"></span>Min</li>
-                                <li><span id="seconds"></span>Sec</li>
-                            </ul>
-                       </div>
-                    </div>
-                    <div class="col-lg-6">
-                        <div class="coming-soon-image" data-aos="fade-left" data-aos-duration="1500" data-aos-offset="50">
-                            <img src="assets/images/Others/coming-soon.png" alt="">
-                        </div>
-                    </div>
-                </div>
+    </section>
+    <!-- divider line -->
+    <div class="line-vr-section"></div>
+    <!-- Not found 404 -->
+    <section class="not-found section-padding">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-6 col-md-12 text-center">
+            <h2>Booking <span style="color: #f5b754"> Confirmed</span></h2>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-6">
+            <div class="image w-100 overflow-hidden">
+              <img
+                src="/public/assets/images/Artificial/success.gif"
+                alt="Booking Confirmed"
+                class="success-gif"
+              />
             </div>
-        </section>
+          </div>
+          <div class="col-lg-6">
+            <div class="py-4 bookingDetails">
+              <h3>Booking Details :</h3>
+              <ul class="bd_list">
+                <li>
+                  <strong>Booking Id : </strong><span id="bookID"> 98263</span>
+                </li>
+                <li><strong>Name : </strong><span id="name"> Testing</span></li>
+                <li>
+                  <strong>Phone No : </strong
+                  ><span id="mobile"> 1234567890</span>
+                </li>
+                <li>
+                  <strong>Email ID : </strong
+                  ><span id="email"> test@gmail.com</span>
+                </li>
+                <li>
+                  <strong>Service : </strong><span id="service"> One Way</span>
+                </li>
+                <li>
+                  <strong>Car Type : </strong><span id="cName"> Sedan</span>
+                </li>
+                <li>
+                  <strong>Pickup Location : </strong
+                  ><span id="pick"> Orgin</span>
+                </li>
+                <li>
+                  <strong>Drop Location : </strong
+                  ><span id="drop"> Destination</span>
+                </li>
+                <li>
+                  <strong>Distance : </strong><span id="distance"> 100</span>km
+                </li>
+                <li>
+                  <strong>Duration : </strong><span id="duration"> 10hr</span>
+                </li>
+                <li>
+                  <strong>Pickup Date : </strong
+                  ><span id="pickupDate"> Pickup Date</span>
+                </li>
+                <li>
+                  <strong>Pickup Time : </strong
+                  ><span id="pickupTime"> Pickup Time</span>
+                </li>
+                <li id="dropDate"></li>
+                <li>
+                  <strong>Esitmated Fare : </strong>Rs.<span id="price">Price</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-lg-12">
+            <div class="text-center py-4">
+              <a
+                onclick="sendMsgToWhatsapp()"
+                class="text-white bg-success px-4 py-3 rounded cursor-pointer"
+                style="cursor: pointer;"
+                >Send to Whatsapp</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
         <!-- Coming Soon Area End -->
        
 

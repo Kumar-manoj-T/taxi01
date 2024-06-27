@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="zxx">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="description" content="" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Title -->
+    <title>Akpager - Multipurpose Landing page HTML Template || Pricing</title>
+    <!-- Favicon Icon -->
+    <link
+      rel="shortcut icon"
+      href="assets/images/logos/favicon.png"
+      type="image/x-icon"
+    />
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Work+Sans:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Flaticon -->
+    <link rel="stylesheet" href="assets/css/flaticon.min.css" />
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="assets/css/fontawesome-5.14.0.min.css" />
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+    <!-- Magnific Popup -->
+    <link rel="stylesheet" href="assets/css/magnific-popup.min.css" />
+    <!-- Nice Select -->
+    <link rel="stylesheet" href="assets/css/nice-select.min.css" />
+    <!-- Animate -->
+    <link rel="stylesheet" href="assets/css/aos.css" />
+    <!-- Slick -->
+    <link rel="stylesheet" href="assets/css/slick.min.css" />
+    <!-- Main Style -->
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+  <body>
+    <div class="page-wrapper">
+      <!-- Preloader -->
+      <div class="preloader"><div class="custom-loader"></div></div>
+
+      <!-- main header -->
+      <%- include('./partials/header') -%>
+
+      <!-- Page Banner Start -->
+      <section
+        class="page-banner-area overlay py-250 rpy-120 rel z-1 bgs-cover text-center"
+        style="background-image: url(assets/images/backgrounds/banner.jpg)"
+      >
+        <div class="container">
+          <div class="banner-inner pt-70 rpt-60 text-white">
+            <h1
+              class="page-title"
+              data-aos="fade-up"
+              data-aos-duration="1500"
+              data-aos-offset="50"
+            >
+              Tariff
+            </h1>
+            <nav aria-label="breadcrumb">
+              <ol
+                class="breadcrumb justify-content-center"
+                data-aos="fade-up"
+                data-aos-delay="100"
+                data-aos-duration="1500"
+                data-aos-offset="50"
+              >
+                <li class="breadcrumb-item"><a href="/">Home</a></li>
+                <li class="breadcrumb-item active">Tariff</li>
+              </ol>
+            </nav>
+          </div>
+        </div>
+      </section>
+      <!-- Page Banner End -->
+
+      <!-- Pricing Area Start -->
+      <section class="not-found section-padding">
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-lg-6 col-md-12 text-center">
+              <h2>Verify <span style="color: #f5b754">OTP</span></h2>
+              <!-- <h3>Sorry, We Can't Find That Page!</h3> -->
+              <p>
+                Verify the OTP for booking confirmation on the provided mobile
+                number.
+              </p>
+              <div class="col-lg-12 flex-center" style="display: none">
+                <input
+                  name="otp"
+                  id="otp"
+                  type="text"
+                  class="form-control mw-350"
+                  placeholder="Enter OTP*"
+                />
+              </div>
+              <div id="termsDiv">
+                <p class="d-flex align-items-center justify-content-center">
+                  <input
+                    type="checkbox"
+                    onchange="termsOpt(event)"
+                    style="height: 20px; width: 20px"
+                    class="mx-2"
+                  />
+                  I agree to
+                  <a href="/terms" target="_blank" class="text-primary mx-1"
+                    >terms and conditions</a
+                  >
+                </p>
+              </div>
+              <button type="submit" id="send_otp_btn" disabled>Send OTP</button>
+              <p class="text-danger" id="error_msg"></p>
+
+              <div class="col-lg-12 text-center" style="display: none">
+                <button type="submit" id="verify_otp_btn">Verify OTP</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Pricing Area End -->
+
+      <!-- footer area start -->
+      <%- include('./partials/footer') -%>
+      <!-- footer area end -->
+    </div>
+    <!--End pagewrapper-->
+
+    <!-- Jquery -->
+    <script src="assets/js/jquery-3.6.0.min.js"></script>
+    <!-- Bootstrap -->
+    <script src="assets/js/bootstrap.min.js"></script>
+    <!-- Appear Js -->
+    <script src="assets/js/appear.min.js"></script>
+    <!-- Slick -->
+    <script src="assets/js/slick.min.js"></script>
+    <!-- Magnific Popup -->
+    <script src="assets/js/jquery.magnific-popup.min.js"></script>
+    <!-- Nice Select -->
+    <script src="assets/js/jquery.nice-select.min.js"></script>
+    <!-- Image Loader -->
+    <script src="assets/js/imagesloaded.pkgd.min.js"></script>
+    <!-- Circle Progress -->
+    <script src="assets/js/circle-progress.min.js"></script>
+    <!-- Skillbar -->
+    <script src="assets/js/skill.bars.jquery.min.js"></script>
+    <!-- Isotope -->
+    <script src="assets/js/isotope.pkgd.min.js"></script>
+    <!--  WOW Animation -->
+    <script src="assets/js/aos.js"></script>
+    <!-- Custom script -->
+    <script src="assets/js/script.js"></script>
+  </body>
+</html>

@@ -33,6 +33,7 @@ const pages = [
   "tariff",
   "cities",
   "contact",
+  "seo",
   "success",
   "verification",
   "estimation",
